@@ -1,0 +1,291 @@
+.app_home{
+    background: #F3EFEB;
+    height: 100%;
+    .my-swiper{
+        width: 100%;
+        .my-swp-silde{
+            height: 140px;
+            .my-swp-img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .swiper-pagination{
+            .swiper-pagination-bullet-active{
+                background: #000;
+            }
+        }
+    }
+    .my-info{
+        width: 100%;
+        height: 80px;
+        box-sizing: border-box;
+        display: flex;
+        padding: 9px 16px 9px 16px;
+        background: #F9EEDA url(https://gongde-assets.oss-cn-shenzhen.aliyuncs.com/texture.png) repeat repeat;
+        .notice,.date{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            div{
+                display: flex;
+                align-items: center;
+                .title{
+                    color: #382F30;
+                    font-size: 14px;
+                    font-weight: bold;
+                    margin-left: 8px;
+                    vertical-align: middle;
+                }
+            }
+            .notice-content{
+                font-size: 13px;
+                margin-top: 5px;
+                color: #8B623E;
+                line-height: 16px;
+                max-height: 40px;
+                width: 90%;
+                &::before{
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    background-color: transparent;
+                    z-index: 1;
+                }
+                .notice_swiper{
+                    height: 50px!important;
+                    span{
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        display: -webkit-box;
+                        -webkit-box-orient: vertical;
+                        -webkit-line-clamp: 2;
+                    }
+                }
+            }
+            .lunar,.special{
+                font-size: 13px;
+                color: #8B623E;
+                display: flex;
+                align-items: center;
+                margin-top: 6px;
+                .icon{
+                    display: flex;
+                    align-items: center;
+                    width: 25px;
+                    height: 14px;
+                    line-height: 14px;
+                    background: #3C160F;
+                    text-align: center;
+                    border-radius: 10px;
+                    margin-left: 16px;
+                    display: inline-block;
+                    font-size: 13px;
+                    color: #E5C89D;
+                }
+                span{
+                    margin-left: 14px;
+                    display: inline-block;
+                    width: calc(100% - 50px);
+                    vertical-align: middle;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+            }
+            .special{
+                .icon{
+                    background: #A41522;
+                }
+            }
+            
+            
+        }
+        .date {
+            &::before{
+                content: '';
+                width: 1px;
+                height: 40px;
+                position: absolute;
+                background-color: rgba(60, 15, 22, .25);
+                top: 25px;
+                left: 0;
+            }
+            .iconfont{
+                font-size: 18px;
+                box-sizing: border-box;
+                padding-left: 16px;
+            }
+        }
+    }
+    .my-merits{
+        width: 100%;
+        height: 155px;
+        margin-top: 4px;
+        padding: 10px 16px 10px 16px;
+        box-sizing: border-box;
+        background: #F9EEDA url(https://gongde-assets.oss-cn-shenzhen.aliyuncs.com/merit.png) no-repeat no-repeat;
+        background-position: center center;
+        background-size: 100% 155px;
+        position: relative;
+        .title{
+            display: flex;
+            height: 30px;
+            line-height: 30px;
+            justify-content: space-between;
+            position: relative;
+            &::after{
+                content: '';
+                width: 100%;
+                height: 1px;
+                background: rgba(139, 98, 62, .6);
+                position: absolute;
+                bottom: 0px;
+            }
+            .title_name{
+                font-size: 16px;
+                color: #382F30;
+                font-weight: bold;
+            }
+        }
+        .merit_content{
+            font-size: 13px;
+            margin-top: 5px;
+            color: #8B623E;
+            overflow: hidden;
+            // text-overflow: ellipsis;
+            // display: -webkit-box;
+            // -webkit-box-orient: vertical;
+            // -webkit-line-clamp: 2;
+            width: 100%;
+            height: 105px;
+            .merit_swiper{
+                overflow: hidden;
+                .my-swp-silde2{
+                    overflow-y: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 1;
+                    // white-space: nowrap;
+                }
+            }
+        }
+    }
+    .my-temple{
+        width: 100%;
+        margin-top: 4px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        padding: 9px 16px 16px 16px;
+        padding-bottom: 80px;
+        background: #F9EEDA url(https://gongde-assets.oss-cn-shenzhen.aliyuncs.com/texture.png) repeat repeat;
+        .temple_title{
+            color: #382F30;
+            font-size: 16px;
+            font-weight: bold;
+            position: relative;
+            text-align: center;
+            display: inline-block;
+            margin: 0 auto 8px auto;
+            &::before,&::after{
+                background: url(https://gongde-assets.oss-cn-shenzhen.aliyuncs.com/cloud.png) no-repeat no-repeat;
+            }
+            &::before{
+                content: '';
+                position: absolute;
+                width: 32px;
+                height: 14px;
+                left: -40px;
+                top: 4px;
+                background-size: 32px 14px;
+            }
+            &::after{
+                content: '';
+                position: absolute;
+                width: 32px;
+                height: 14px;
+                right: -40px;
+                top: 4px;
+                background-size: 32px 14px;
+                transform: scale(-1, 1);
+            }
+        }
+        .temple_item{
+            display: flex;
+            position: relative;
+            width: 100%;
+            height: 150px;
+            border-radius: 6px;
+            margin-top: 12px;
+            overflow: hidden;
+            .temple_swiper{
+                width: 100%;
+                height: 150px;
+                position: absolute;
+                left: 0;
+                top: 0;
+                z-index: 0;
+                border-radius: 6px;
+                &::before{
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    background-color: transparent;
+                    z-index: 1;
+                }
+                .my-swp-silde1{
+                    height: 150px;
+                    .my-swp-img1{
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        z-index: 0;
+                        border-radius: 6px;
+                    }
+                }
+            }
+            .temple_info{
+                height: 45px;
+                width: 100%;
+                background: rgba(60, 22, 15, .6);
+                position: absolute;
+                bottom: 0;
+                z-index: 2;
+                border-bottom-left-radius: 6px;
+                border-bottom-right-radius: 6px;
+                display: flex;
+                box-sizing: border-box;
+                padding: 4px 16px 4px 16px;
+                color: white;
+                .iconfont{
+                    font-size: 16px;
+                }
+                .temple_name{
+                    margin-left: 10px;
+                    span{
+                        font-size: 15px;
+                        font-weight: bold;
+                        display: block;
+                    }
+                    .temple_addr{
+                        color: #D1C0B2;
+                        font-size: 13px;
+                        font-weight: normal;
+                        margin-top: 5px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,10 @@
+body {
+  background: #F9EEDA url(https://gongde-assets.oss-cn-shenzhen.aliyuncs.com/texture.png) repeat repeat;
+  height: 100%; }
+  body .login {
+    width: 100%;
+    height: calc(100% - 28px);
+    box-sizing: border-box;
+    background: #F9EEDA url(https://gongde-assets.oss-cn-shenzhen.aliyuncs.com/texture.png) repeat repeat; }
+
+/*# sourceMappingURL=login.css.map */
