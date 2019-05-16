@@ -1,0 +1,42 @@
+.app_navbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-top: 1px solid #eee;
+  background-color: #FFF;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 999;
+}
+.app_navbar .nav_item {
+  height: 100%;
+  display: inline-block;
+  flex: 0.25;
+  justify-content: space-around;
+  align-items: center;
+}
+.app_navbar .nav_item .bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.app_navbar .nav_item .bar .img {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+}
+.app_navbar .nav_item .bar .img img {
+  width: 100%;
+  height: 100%;
+}
+.app_navbar .nav_item .bar .img span {
+  text-align: center;
+  font-size: 10px;
+}
+
+/*# sourceMappingURL=navbar.css.map */

@@ -1,0 +1,69 @@
+.my-musicControl{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 1px solid rgba(139, 98, 62, .6);
+    background: rgba(139, 98, 62, .4);
+    position: fixed;
+    bottom: 140px;
+    right: -45px;
+    color: #fff;
+    font-size: 16px;
+    .music_btn,.sign_btn{
+        color: white;
+        border-radius: 0;
+        border: none;
+    }
+    .music_btn{
+        width: 45px;
+        height: 45px;
+        border-top-left-radius: 45px !important;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: rgba(139, 98, 62, .6);
+        line-height: 45px;
+        outline: none;
+        
+       
+        .iconfont{
+            font-size: 26px;
+        }
+        .text{
+            margin-left: 8px;
+        }
+    }
+    .delete_line{
+        width: 24px;
+        height: 2px;
+        background: #A41522;
+        position: absolute;
+        transform: rotate(50deg);
+        top: 22px;
+        left: 16px;
+    }
+    .play{
+        width: 0;
+        height: 0px;
+        background: #A41522;
+        position: absolute;
+        // transform: rotate(50deg);
+        // top: 22px;
+        // left: 16px;
+    }
+    .sign_btn{
+        width: 45px;
+        height: 45px;
+        border-bottom-left-radius: 45px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background: rgba(139, 98, 62, .4);
+        line-height: 45px;
+        outline: none;
+        .text{
+            font-size: 18px;
+            margin-left: 8px;
+        }
+    }
+}
